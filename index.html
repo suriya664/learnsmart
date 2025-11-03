@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LearnSmart Academy - India's leading online education platform. Learn Web Development, Data Science, Digital Marketing from expert instructors.">
+    <meta name="keywords" content="online courses, education, web development, data science, digital marketing, India, eLearning">
+    <title>LearnSmart Academy - India's #1 Online Education Platform</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
+    
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/layout.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-2" 
+                     style="width: 50px; height: 50px;">
+                    <i class="fas fa-graduation-cap fa-lg"></i>
+                </div>
+                <div>
+                    <h4 class="mb-0 fw-bold text-primary" style="line-height: 1;">LearnSmart</h4>
+                    <small class="text-muted" style="font-size: 0.85rem;">Academy</small>
+                </div>
+            </a>
+            
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarMain">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link fw-bold" href="index.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Courses</a>
+                        <ul class="dropdown-menu shadow border-0">
+                            <li><a class="dropdown-item" href="pages/courses.html">All Courses</a></li>
+                            <li><a class="dropdown-item" href="pages/courses.html?category=web-development">Web Development</a></li>
+                            <li><a class="dropdown-item" href="pages/courses.html?category=data-science">Data Science</a></li>
+                            <li><a class="dropdown-item" href="pages/courses.html?category=digital-marketing">Digital Marketing</a></li>
+                            <li><a class="dropdown-item" href="pages/courses.html?category=business">Business</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="pages/instructors.html">Instructors</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pages/about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pages/blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pages/contact.html">Contact</a></li>
+                </ul>
+                <div class="d-flex gap-2">
+                    <a href="pages/login.html" class="btn btn-outline-primary btn-sm">
+                        Login
+                    </a>
+                    <a href="pages/register.html" class="btn btn-primary btn-sm">
+                        <i class="fas fa-user-plus me-1"></i>Sign Up
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="hero-section bg-primary text-white py-5" style="min-height: 650px; margin-top: 0; padding-top: 100px;">
+        <div class="container">
+            <div class="row align-items-center" style="min-height: 550px;">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <span class="badge bg-white text-primary px-3 py-2 rounded-pill mb-3">
+                        <i class="fas fa-fire me-2"></i>India's #1 Education Platform
+                    </span>
+                    <h1 class="display-4 fw-bold mb-4">
+                        Learn Skills That <span class="text-warning">Transform Careers</span>
+                    </h1>
+                    <p class="lead mb-4">
+                        Join 150,000 students learning from 800 expert instructors. 
+                        Build your career with industry-relevant courses designed for India.
+                    </p>
+                    
+                    <!-- Search Bar -->
+                    <form action="pages/courses.html" method="get" class="mb-4">
+                        <div class="input-group input-group-lg">
+                            <input type="text" class="form-control" name="search" 
+                                   placeholder="Search courses (Web Development, Data Science...)">
+                            <button class="btn btn-warning fw-bold" type="submit">
+                                <i class="fas fa-search me-2"></i>Search
+                            </button>
+                        </div>
+                    </form>
+                    
+                    <div class="d-flex gap-3 mb-4 flex-wrap">
+                        <a href="pages/courses.html" class="btn btn-warning btn-lg">
+                            <i class="fas fa-graduation-cap me-2"></i>Explore Courses
+                        </a>
+                        <a href="pages/about.html" class="text-white text-decoration-underline fw-semibold">
+                            Learn More
+                        </a>
+                    </div>
+                    
+                    <div class="d-flex gap-4 flex-wrap">
+                        <div><i class="fas fa-users me-2"></i>150,000 Students</div>
+                        <div><i class="fas fa-star me-2"></i>4.8/5 Rating</div>
+                        <div><i class="fas fa-certificate me-2"></i>95,000 Certificates</div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 text-center">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&h=600&fit=crop" 
+                         alt="Students Learning Online" class="img-fluid rounded-3 shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Stats Section -->
+    <section class="py-5 bg-gradient" style="background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));">
+        <div class="container">
+            <div class="row text-center text-white">
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <div class="stat-item">
+                        <i class="fas fa-users fa-3x mb-3"></i>
+                        <h3 class="fw-bold counter" data-count="150000">0</h3>
+                        <p class="mb-0">Happy Students</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <div class="stat-item">
+                        <i class="fas fa-graduation-cap fa-3x mb-3"></i>
+                        <h3 class="fw-bold counter" data-count="5000">0</h3>
+                        <p class="mb-0">Quality Courses</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <div class="stat-item">
+                        <i class="fas fa-chalkboard-teacher fa-3x mb-3"></i>
+                        <h3 class="fw-bold counter" data-count="800">0</h3>
+                        <p class="mb-0">Expert Instructors</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="stat-item">
+                        <i class="fas fa-certificate fa-3x mb-3"></i>
+                        <h3 class="fw-bold counter" data-count="95000">0</h3>
+                        <p class="mb-0">Certificates Issued</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Categories -->
+    <section class="section bg-light py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold mb-3">Choose Your Learning Path</h2>
+                <p class="lead text-muted">Explore our most popular course categories</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="card text-center h-100 border-0 shadow-sm category-card">
+                        <div class="card-body d-flex flex-column p-4">
+                            <i class="fas fa-code text-primary fa-3x mb-3"></i>
+                            <h5 class="fw-bold mb-2">Web Development</h5>
+                            <p class="text-muted mb-4">1,200 Courses</p>
+                            <div class="mt-auto">
+                                <a href="pages/courses.html?category=web-development" class="btn btn-primary w-100">Explore <i class="fas fa-arrow-right ms-1"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="card text-center h-100 border-0 shadow-sm category-card">
+                        <div class="card-body d-flex flex-column p-4">
+                            <i class="fas fa-chart-line text-primary fa-3x mb-3"></i>
+                            <h5 class="fw-bold mb-2">Data Science</h5>
+                            <p class="text-muted mb-4">800 Courses</p>
+                            <div class="mt-auto">
+                                <a href="pages/courses.html?category=data-science" class="btn btn-primary w-100">Explore <i class="fas fa-arrow-right ms-1"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="card text-center h-100 border-0 shadow-sm category-card">
+                        <div class="card-body d-flex flex-column p-4">
+                            <i class="fas fa-bullhorn text-primary fa-3x mb-3"></i>
+                            <h5 class="fw-bold mb-2">Digital Marketing</h5>
+                            <p class="text-muted mb-4">600 Courses</p>
+                            <div class="mt-auto">
+                                <a href="pages/courses.html?category=digital-marketing" class="btn btn-primary w-100">Explore <i class="fas fa-arrow-right ms-1"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="card text-center h-100 border-0 shadow-sm category-card">
+                        <div class="card-body d-flex flex-column p-4">
+                            <i class="fas fa-briefcase text-primary fa-3x mb-3"></i>
+                            <h5 class="fw-bold mb-2">Business</h5>
+                            <p class="text-muted mb-4">900 Courses</p>
+                            <div class="mt-auto">
+                                <a href="pages/courses.html?category=business" class="btn btn-primary w-100">Explore <i class="fas fa-arrow-right ms-1"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5">
+                <a href="pages/courses.html" class="btn btn-primary btn-lg px-5 py-3">
+                    View All Categories <i class="fas fa-arrow-right ms-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Featured Courses -->
+    <section class="section py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold mb-3">Most Popular Courses</h2>
+                <p class="lead text-muted">Start learning with our top-rated courses</p>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Course 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="position-relative">
+                            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400&h=250&fit=crop" 
+                                 class="card-img-top" alt="Web Development Course" style="height: 200px; object-fit: cover;">
+                            <span class="badge bg-success position-absolute top-0 start-0 m-3">Bestseller</span>
+                        </div>
+                        <div class="card-body p-4 d-flex flex-column">
+                            <div class="mb-2">
+                                <span class="badge bg-primary me-2">Beginner</span>
+                                <small class="text-muted"><i class="fas fa-clock me-1"></i>45 hours</small>
+                            </div>
+                            <h5 class="card-title fw-bold mb-3">Complete Web Development Bootcamp</h5>
+                            <p class="card-text text-muted mb-3">
+                                Master HTML, CSS, JavaScript, React, and Node.js from scratch to advanced level.
+                            </p>
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="https://ui-avatars.com/api/?name=Raj+Kumar&background=ff6b35&color=fff" 
+                                     class="rounded-circle me-2" width="32" height="32" alt="Instructor">
+                                <small class="text-muted">Raj Kumar</small>
+                            </div>
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="text-warning me-2">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="fw-bold me-1">4.8</span>
+                                <small class="text-muted">(12,456 reviews)</small>
+                            </div>
+                            <div class="mt-auto">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <div>
+                                        <span class="h5 text-primary fw-bold mb-0">₹ 2,999</span>
+                                        <small class="text-muted text-decoration-line-through ms-2">₹ 9,999</small>
+                                    </div>
+                                </div>
+                                <a href="pages/course-details.html" class="btn btn-primary w-100">Enroll Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Course 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="position-relative">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=250&fit=crop" 
+                                 class="card-img-top" alt="Data Science Course" style="height: 200px; object-fit: cover;">
+                            <span class="badge bg-warning text-dark position-absolute top-0 start-0 m-3">New</span>
+                        </div>
+                        <div class="card-body p-4 d-flex flex-column">
+                            <div class="mb-2">
+                                <span class="badge bg-warning me-2">Intermediate</span>
+                                <small class="text-muted"><i class="fas fa-clock me-1"></i>60 hours</small>
+                            </div>
+                            <h5 class="card-title fw-bold mb-3">Data Science Masterclass</h5>
+                            <p class="card-text text-muted mb-3">
+                                Learn Python, Machine Learning, AI and data analysis from industry experts.
+                            </p>
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="https://ui-avatars.com/api/?name=Priya+Sharma&background=0066cc&color=fff" 
+                                     class="rounded-circle me-2" width="32" height="32" alt="Instructor">
+                                <small class="text-muted">Priya Sharma</small>
+                            </div>
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="text-warning me-2">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="fw-bold me-1">4.9</span>
+                                <small class="text-muted">(8,234 reviews)</small>
+                            </div>
+                            <div class="mt-auto">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <div>
+                                        <span class="h5 text-primary fw-bold mb-0">₹ 4,999</span>
+                                        <small class="text-muted text-decoration-line-through ms-2">₹ 12,999</small>
+                                    </div>
+                                </div>
+                                <a href="pages/course-details.html" class="btn btn-primary w-100">Enroll Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Course 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="position-relative">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=250&fit=crop" 
+                                 class="card-img-top" alt="Digital Marketing Course" style="height: 200px; object-fit: cover;">
+                            <span class="badge bg-info position-absolute top-0 start-0 m-3">Trending</span>
+                        </div>
+                        <div class="card-body p-4 d-flex flex-column">
+                            <div class="mb-2">
+                                <span class="badge bg-success me-2">All Levels</span>
+                                <small class="text-muted"><i class="fas fa-clock me-1"></i>35 hours</small>
+                            </div>
+                            <h5 class="card-title fw-bold mb-3">Digital Marketing Complete</h5>
+                            <p class="card-text text-muted mb-3">
+                                Master SEO, SEM, Social Media, and Content Marketing with practical projects.
+                            </p>
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="https://ui-avatars.com/api/?name=Amit+Gupta&background=28a745&color=fff" 
+                                     class="rounded-circle me-2" width="32" height="32" alt="Instructor">
+                                <small class="text-muted">Amit Gupta</small>
+                            </div>
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="text-warning me-2">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <span class="fw-bold me-1">4.7</span>
+                                <small class="text-muted">(9,876 reviews)</small>
+                            </div>
+                            <div class="mt-auto">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <div>
+                                        <span class="h5 text-primary fw-bold mb-0">₹ 1,999</span>
+                                        <small class="text-muted text-decoration-line-through ms-2">₹ 6,999</small>
+                                    </div>
+                                </div>
+                                <a href="pages/course-details.html" class="btn btn-primary w-100">Enroll Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5">
+                <a href="pages/courses.html" class="btn btn-outline-primary btn-lg px-5 py-3">
+                    View All Courses <i class="fas fa-arrow-right ms-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Why Choose Us -->
+    <section class="section py-5 bg-light why-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold mb-3">Why LearnSmart Academy?</h2>
+                <p class="lead text-muted">Features that make us India's #1 education platform</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4" style="text-align: center;">
+                        <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-4" 
+                             style="width: 80px; height: 80px;">
+                            <i class="fas fa-infinity fa-2x"></i>
+                        </div>
+                        <h5 class="fw-bold mb-3" style="text-align: center;">Lifetime Access</h5>
+                        <p class="text-muted" style="text-align: center;">Enroll once, access forever. Learn at your own pace, anytime, anywhere.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4" style="text-align: center;">
+                        <div class="bg-success text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-4" 
+                             style="width: 80px; height: 80px;">
+                            <i class="fas fa-certificate fa-2x"></i>
+                        </div>
+                        <h5 class="fw-bold mb-3" style="text-align: center;">Industry Certificates</h5>
+                        <p class="text-muted" style="text-align: center;">Earn recognized certificates that boost your resume and LinkedIn profile.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4" style="text-align: center;">
+                        <div class="bg-warning text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-4" 
+                             style="width: 80px; height: 80px;">
+                            <i class="fas fa-mobile-alt fa-2x"></i>
+                        </div>
+                        <h5 class="fw-bold mb-3" style="text-align: center;">Mobile App</h5>
+                        <p class="text-muted" style="text-align: center;">Learn on the go with our iOS and Android apps. Offline downloads available.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4" style="text-align: center;">
+                        <div class="bg-info text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-4" 
+                             style="width: 80px; height: 80px;">
+                            <i class="fas fa-headset fa-2x"></i>
+                        </div>
+                        <h5 class="fw-bold mb-3" style="text-align: center;">24/7 Support</h5>
+                        <p class="text-muted" style="text-align: center;">Our dedicated support team is always ready to help you succeed.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4" style="text-align: center;">
+                        <div class="bg-danger text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-4" 
+                             style="width: 80px; height: 80px;">
+                            <i class="fas fa-rupee-sign fa-2x"></i>
+                        </div>
+                        <h5 class="fw-bold mb-3" style="text-align: center;">Money-Back Guarantee</h5>
+                        <p class="text-muted" style="text-align: center;">30-day full refund if you're not satisfied. No questions asked.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4" style="text-align: center;">
+                        <div class="bg-secondary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-4" 
+                             style="width: 80px; height: 80px;">
+                            <i class="fas fa-users fa-2x"></i>
+                        </div>
+                        <h5 class="fw-bold mb-3" style="text-align: center;">Community Support</h5>
+                        <p class="text-muted" style="text-align: center;">Join discussions, ask questions, and network with fellow learners.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Newsletter -->
+    <section class="section bg-primary text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h2 class="fw-bold mb-3">Subscribe to Our Newsletter</h2>
+                    <p class="lead mb-0">Get updates on new courses, special offers, and career tips.</p>
+                </div>
+                <div class="col-lg-6">
+                    <form class="d-flex gap-2">
+                        <input type="email" class="form-control form-control-lg" placeholder="Your email address" required>
+                        <button class="btn btn-warning btn-lg text-nowrap" type="submit">
+                            <i class="fas fa-paper-plane me-2"></i>Subscribe
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="text-white mb-3">LearnSmart Academy</h5>
+                    <p class="mb-3">India's leading online education platform helping 150,000+ students build successful careers.</p>
+                    <ul class="list-unstyled mb-3">
+                        <li class="mb-2"><i class="fas fa-map-marker-alt text-primary me-2"></i>27, MG Road, Bengaluru, Karnataka 560001</li>
+                        <li class="mb-2"><i class="fas fa-phone text-primary me-2"></i><a class="text-light" href="tel:+919876543210">+91 98765 43210</a></li>
+                        <li class="mb-2"><i class="fas fa-envelope text-primary me-2"></i><a class="text-light" href="mailto:support@learnsmart.in">support@learnsmart.in</a></li>
+                    </ul>
+                    <div class="d-flex footer-social">
+                        <a href="https://facebook.com" class="social-facebook" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com" class="social-twitter" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://instagram.com" class="social-instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://linkedin.com" class="social-linkedin" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://youtube.com" class="social-youtube" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="text-white mb-3">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-light">Home</a></li>
+                        <li class="mb-2"><a href="pages/about.html" class="text-light">About</a></li>
+                        <li class="mb-2"><a href="pages/courses.html" class="text-light">Courses</a></li>
+                        <li class="mb-2"><a href="pages/instructors.html" class="text-light">Instructors</a></li>
+                        <li class="mb-2"><a href="pages/blog.html" class="text-light">Blog</a></li>
+                        <li class="mb-2"><a href="pages/contact.html" class="text-light">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h6 class="text-white mb-3">Popular Courses</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="pages/courses.html?category=web-development" class="text-light">Web Development</a></li>
+                        <li class="mb-2"><a href="pages/courses.html?category=data-science" class="text-light">Data Science</a></li>
+                        <li class="mb-2"><a href="pages/courses.html?category=digital-marketing" class="text-light">Digital Marketing</a></li>
+                        <li class="mb-2"><a href="pages/courses.html?category=business" class="text-light">Business</a></li>
+                        <li class="mb-2"><a href="pages/courses.html?category=design" class="text-light">Design</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h6 class="text-white mb-3">Legal & Support</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="pages/privacy-policy.html" class="text-light">Privacy Policy</a></li>
+                        <li class="mb-2"><a href="pages/terms.html" class="text-light">Terms & Conditions</a></li>
+                        <li class="mb-2"><a href="pages/faq.html" class="text-light">FAQ</a></li>
+                        <li class="mb-2"><a href="pages/pricing.html" class="text-light">Pricing</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 border-secondary">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2025 LearnSmart Academy Pvt. Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Back to Top -->
+    <button class="btn btn-primary rounded-circle position-fixed d-flex align-items-center justify-content-center" id="backToTop" 
+            style="bottom: 20px; right: 20px; width: 50px; height: 50px; display: none; z-index: 1000;">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+    
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    
+    <style>
+        .category-card:hover { transform: translateY(-10px); box-shadow: 0 15px 35px rgba(0,0,0,0.15); }
+        .card:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(0,0,0,0.15); }
+        .stat-item:hover { transform: scale(1.05); }
+        .navbar-nav .nav-link { padding: 0.5rem 1rem; border-radius: 0.5rem; transition: all 0.3s; }
+        .navbar-nav .nav-link:hover { background: rgba(255,107,53,0.1); color: #0066cc; }
+        .dropdown-menu { border: none; box-shadow: 0 10px 40px rgba(0,0,0,0.1); border-radius: 0.75rem; margin-top: 0.5rem; }
+        .dropdown-item { padding: 0.75rem 1.25rem; transition: all 0.3s; }
+        .dropdown-item:hover { background: rgba(0,102,204,0.1); color: #0066cc; }
+        .social-hover:hover { transform: translateY(-2px); background: rgba(255,255,255,0.2); }
+        .footer-links a { transition: all 0.3s; }
+        .footer-links a:hover { color: #ff6b35 !important; transform: translateX(5px); }
+        .navbar-brand:hover { text-decoration: none; }
+        .navbar-brand h4 { color: #0066cc !important; }
+        .navbar-brand .bg-primary { background-color: #0066cc !important; }
+        .text-primary { color: #0066cc !important; }
+        .btn-primary { background-color: #0066cc; border-color: #0066cc; }
+        .btn-primary:hover { background-color: #0052a3; border-color: #0052a3; }
+        .bg-primary { background-color: #0066cc !important; }
+    </style>
+</body>
+</html>
